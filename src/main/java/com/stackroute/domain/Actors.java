@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actors {
@@ -10,6 +11,9 @@ public class Actors {
 
     private int age;
 
+
+    //inject the object dependency implicitly.
+    @Autowired
     public Actors(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
