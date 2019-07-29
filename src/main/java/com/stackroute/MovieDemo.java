@@ -19,7 +19,7 @@ public class MovieDemo {
     public static void main(String[] args){
         //instance of interface IOC class
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(ConfigClass.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ConfigClass.class);
 
         Movie movie1=context.getBean("movie1",Movie.class);
       //  Movie movie2=context.getBean("movie1",Movie.class);
@@ -37,8 +37,8 @@ public class MovieDemo {
         System.out.println(actors1==actors2);
 
         ConfigurableApplicationContext context1=new AnnotationConfigApplicationContext(ConfigClass.class);
-        BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context.getBean("beanLifecycleDemoBean");
-//
+        BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context1.getBean("beanLifecycleDemoBean");
+        context.close();
 
 
 
