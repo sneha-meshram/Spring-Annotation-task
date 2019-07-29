@@ -22,7 +22,23 @@ public class MovieDemo {
         ApplicationContext context = new AnnotationConfigApplicationContext(ConfigClass.class);
        // Movie movie1=(Movie) context.getBean("act");
         Movie movie1=context.getBean("movie1",Movie.class);
+        Movie movie2=context.getBean("movie1",Movie.class);
         System.out.println(movie1.getActors());
+
+        Actors actor=context.getBean("actor",Actors.class);
+        System.out.println(actor);
+
+        Actors actors1=context.getBean("actors1",Actors.class);
+        System.out.println(actors1);
+
+        Actors actors2=context.getBean("actors2",Actors.class);
+        System.out.println(actors2);
+        System.out.println(actors1==actors2);
+        System.out.println(movie1==movie2);
+
+
+
+
 
 //        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
 //       // Actors actors=context.getBean("actors",Actors.class);
@@ -36,11 +52,6 @@ public class MovieDemo {
 //
 //        //calling method of BeanPostProcessor class.
 //        BeanPostProcessor beanPostProcessor=context1.getBean("beanPostProcessorDemoBean", BeanPostProcessorDemoBean.class);
-
-
-
-
-
 
     }
 }
