@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<context:annotation-config/>
 
-    <bean id="act1" class="com.stackroute.domain.Actors">
-        <constructor-arg index="0" value="salman"></constructor-arg>
-        <constructor-arg index="1" value="male"></constructor-arg>
-        <constructor-arg index="2" value="23"></constructor-arg>
-    </bean>
 
-    <bean id="act2" class="com.stackroute.domain.Actors">
-        <constructor-arg type="String" value="shahrukh"></constructor-arg>
-        <constructor-arg type="String" value="male"></constructor-arg>
-        <constructor-arg type="int" value="32"></constructor-arg>
-    </bean>
 
-    <bean id="act3" class="com.stackroute.domain.Actors">
-        <constructor-arg name="name" value="katrina"></constructor-arg>
-        <constructor-arg name="gender" value="female"></constructor-arg>
-        <constructor-arg name="age" value="16"></constructor-arg>
-    </bean>
 
-    <!-- creating new two beans by scope as prototype -->
+<!--    <bean id="act1" class="com.stackroute.domain.Actors">-->
+<!--        <constructor-arg index="0" value="salman"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="male"></constructor-arg>-->
+<!--        <constructor-arg index="2" value="23"></constructor-arg>-->
+<!--    </bean>-->
 
-    <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor">
+<!--    <bean id="act2" class="com.stackroute.domain.Actors">-->
+<!--        <constructor-arg type="String" value="shahrukh"></constructor-arg>-->
+<!--        <constructor-arg type="String" value="male"></constructor-arg>-->
+<!--        <constructor-arg type="int" value="32"></constructor-arg>-->
+<!--    </bean>-->
 
-    </bean>
+<!--    <bean id="act3" class="com.stackroute.domain.Actors">-->
+<!--        <constructor-arg name="name" value="katrina"></constructor-arg>-->
+<!--        <constructor-arg name="gender" value="female"></constructor-arg>-->
+<!--        <constructor-arg name="age" value="16"></constructor-arg>-->
+<!--    </bean>-->
 
-    <bean id="movie2" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor">
+<!--    &lt;!&ndash; creating new two beans by scope as prototype &ndash;&gt;-->
 
-    </bean>
+<!--    <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor">-->
 
-    <!--creating bean for BeanLifecycleDemoBean class -->
-    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"
-              init-method="customInit"
-              destroy-method="customDestroy">
-    </bean>
+<!--    </bean>-->
 
-    <!--creating bean for BeanPostProcessorDemoBean class -->
-    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
+<!--    <bean id="movie2" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor">-->
+
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;creating bean for BeanLifecycleDemoBean class &ndash;&gt;-->
+<!--    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"-->
+<!--              init-method="customInit"-->
+<!--              destroy-method="customDestroy">-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;creating bean for BeanPostProcessorDemoBean class &ndash;&gt;-->
+<!--    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>-->
 
 
 </beans>

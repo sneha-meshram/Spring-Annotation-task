@@ -1,20 +1,17 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Actors {
 
+    @Value("sneha")
     private String name;
+    @Value("female")
     private String gender;
+    @Value("23")
     private int age;
 
-    public Actors() {
-    }
 
-    //constructor
-    public Actors(String name,String gender, int age) {
-        this.name=name;
-        this.gender=gender;
-        this.age=age;
-    }
     //creating getter and setter
     public String getName() {
         return name;

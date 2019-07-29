@@ -13,11 +13,9 @@ import java.util.List;
 
 public class Movie  {
 
-    List<Actors> actors;
+    Actors actors;
 
-    public Movie(List<Actors> actors) {
-        this.actors= actors;
-    }
+
 
     @Override
     public String toString() {
@@ -26,11 +24,11 @@ public class Movie  {
                 '}';
     }
 
-    public List<Actors> getActors() {
+    public Actors getActors() {
         return actors;
     }
 
-    public void setActors(List<Actors> actors) {
+    public void setActors(Actors actors) {
         this.actors = actors;
     }
 
