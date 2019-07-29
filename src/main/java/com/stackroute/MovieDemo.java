@@ -36,6 +36,10 @@ public class MovieDemo {
         System.out.println(actors2);
         System.out.println(actors1==actors2);
 
+        ConfigurableApplicationContext context1=new AnnotationConfigApplicationContext(ConfigClass.class);
+        BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context.getBean("beanLifecycleDemoBean");
+//
+
 
 
 
@@ -48,9 +52,7 @@ public class MovieDemo {
 //
 //
 //        //calling method for BeanLifecycleDemoBean class.
-//        ConfigurableApplicationContext context1=new ClassPathXmlApplicationContext("beans.xml");
-//        BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context1.getBean("beanLifecycleDemoBean");
-//
+
 //        //calling method of BeanPostProcessor class.
 //        BeanPostProcessor beanPostProcessor=context1.getBean("beanPostProcessorDemoBean", BeanPostProcessorDemoBean.class);
 

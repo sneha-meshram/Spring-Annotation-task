@@ -36,13 +36,13 @@
 
 <!--    </bean>-->
 
-<!--    &lt;!&ndash;creating bean for BeanLifecycleDemoBean class &ndash;&gt;-->
+<!--
 <!--    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"-->
 <!--              init-method="customInit"-->
 <!--              destroy-method="customDestroy">-->
 <!--    </bean>-->
 
-<!--    &lt;!&ndash;creating bean for BeanPostProcessorDemoBean class &ndash;&gt;-->
+<!--
 <!--    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>-->
 
 
