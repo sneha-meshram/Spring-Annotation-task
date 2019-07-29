@@ -40,21 +40,5 @@ public class MovieDemo {
         BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context1.getBean("beanLifecycleDemoBean");
         context.close();
 
-
-
-
-
-
-//        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
-//       // Actors actors=context.getBean("actors",Actors.class);
-//        Movie movie1=context.getBean("movie1",Movie.class);
-//        System.out.println(movie1.getActors());
-//
-//
-//        //calling method for BeanLifecycleDemoBean class.
-
-//        //calling method of BeanPostProcessor class.
-//        BeanPostProcessor beanPostProcessor=context1.getBean("beanPostProcessorDemoBean", BeanPostProcessorDemoBean.class);
-
     }
 }
